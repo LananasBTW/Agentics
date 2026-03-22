@@ -1,0 +1,12 @@
+# Framework Multi-Agents
+crewai>=0.28.0
+
+# Connexion aux modèles locaux
+litellm>=1.35.0
+
+# Outils de l'Agent Analyste
+duckduckgo-search>=5.3.0
+requests>=2.31.0
+
+# Outils de trading test
+ccxt
