@@ -64,7 +64,7 @@ equipe = Crew(
     process=Process.sequential
 )
 
-print("🚀 Démarrage de l'équipe d'agents IA locaux...")
+print("Démarrage de l'équipe d'agents IA locaux...")
 resultat = equipe.kickoff()
 
 print("\n\n================================================")

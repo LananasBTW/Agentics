@@ -127,7 +127,7 @@ equipe = Crew(
 # ==========================================
 # 5. LE LANCEMENT
 # ==========================================
-print("🚀 Lancement de la simulation de Trading...")
+print("Lancement de la simulation de Trading...")
 equipe.kickoff()
 
 # À la fin, on regarde combien d'argent on a !
