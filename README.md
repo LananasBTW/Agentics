@@ -6,3 +6,4 @@
 
 ## Improvements
 // Add MCD Skills for the agnents to prevent ussing tokens
+// Search to see you to optimize token rate per second --> So we can use a stronger model
