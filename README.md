@@ -15,3 +15,4 @@
 - Décomposition de requête et workflows hiérarchiques
 - Mise en cache intelligente
 - Gestion du contexte agent
+- Optimisation RAG
