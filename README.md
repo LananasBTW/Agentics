@@ -12,3 +12,5 @@
 
 ## Search
 - Compression de prompts et de contexte (LLMLingua)
+- Décomposition de requête et workflows hiérarchiques
+- Mise en cache intelligente
