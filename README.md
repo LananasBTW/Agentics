@@ -14,3 +14,4 @@
 - Compression de prompts et de contexte (LLMLingua)
 - Décomposition de requête et workflows hiérarchiques
 - Mise en cache intelligente
+- Gestion du contexte agent
