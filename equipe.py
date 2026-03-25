@@ -68,6 +68,6 @@ print("Démarrage de l'équipe d'agents IA locaux...")
 resultat = equipe.kickoff()
 
 print("\n\n================================================")
-print("✅ RÉSULTAT FINAL PRODUIT PAR TON ÉQUIPE :")
+print("RÉSULTAT FINAL PRODUIT PAR TON ÉQUIPE :")
 print("================================================")
 print(resultat)
