@@ -75,6 +75,10 @@ equipe_crypto = Crew(
     process=Process.sequential
 )
 
+# ============================================
+# 5. REPONSE
+# ============================================
+
 print(f"Démarrage de l'analyse pour le {crypto_cible.upper()}...")
 resultat = equipe_crypto.kickoff()
 
