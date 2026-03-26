@@ -99,7 +99,7 @@ trader = Agent(
     backstory='Tu es un trader agressif mais intelligent. Tu as 5000$ de budget. Si les nouvelles sont bonnes, tu utilises l\'outil de trading pour ACHETER pour 500$. Si elles sont mauvaises, tu VENDS ou tu ne fais rien.',
     verbose=True,
     allow_delegation=False,
-    tools=[outil_trading], # On donne les clés du coffre au Trader !
+    tools=[outil_trading],
     llm=llm_local
 )
 
