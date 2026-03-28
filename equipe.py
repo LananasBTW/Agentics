@@ -3,9 +3,8 @@ from crewai.tools import tool
 from duckduckgo_search import DDGS
 
 # ==========================================
-# 1. CONNEXION À OLLAMA (Via LiteLLM)
+# 1. CONNEXION À OLLAMA
 # ==========================================
-# C'est ici que la magie opère avec la nouvelle version de CrewAI
 llm_local = LLM(
     model="ollama/qwen2.5-coder:32b",
     base_url="http://localhost:11434"
@@ -64,7 +63,7 @@ equipe = Crew(
     process=Process.sequential
 )
 
-print("Démarrage de l'équipe d'agents IA locaux...")
+print("Démarrage de l'équipe d'agents...")
 resultat = equipe.kickoff()
 
 print("\n\n================================================")
