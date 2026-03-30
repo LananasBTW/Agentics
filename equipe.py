@@ -15,7 +15,7 @@ llm_local = LLM(
 # ==========================================
 @tool("Recherche Web DuckDuckGo")
 def outil_recherche(query: str) -> str:
-    """Utile pour rechercher des informations récentes sur internet. Prends en entrée une requête de recherche (string)."""
+    """Utile pour rechercher des informations récentes sur internet"""
     with DDGS() as ddgs:
         results = [r for r in ddgs.text(query, max_results=3)]
         return str(results) if results else "Aucun résultat trouvé."
