@@ -43,7 +43,7 @@ class KrakenPaperTrader:
         else:
             message = "Action ignorée (ATTENDRE)."
 
-        # On enregistre la trace pour ton futur Dashboard !
+        # On enregistre pour un potentiel dashboard (TODO)
         self.historique_ordres.append({"action": action, "detail": message, "portefeuille": self.portfolio.copy()})
         return message
 
