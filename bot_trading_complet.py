@@ -4,7 +4,7 @@ from crewai.tools import tool
 from duckduckgo_search import DDGS
 
 # ==========================================
-# 1. NOTRE PORTFEUILLE VIRTUEL (Le Sandbox)
+# 1. NOTRE PORTFEUILLE VIRTUEL
 # ==========================================
 class KrakenPaperTrader:
     def __init__(self, solde_initial_usd=5000.0):
@@ -55,6 +55,7 @@ broker = KrakenPaperTrader()
 # ==========================================
 # 2. LES OUTILS DES AGENTS
 # ==========================================
+
 @tool("Recherche Actualites Crypto")
 def outil_recherche(query: str) -> str:
     """Cherche les actualités récentes sur internet."""
@@ -81,6 +82,8 @@ def outil_trading(action: str, montant_usd: float) -> str:
 # ==========================================
 # 3. LE CERVEAU ET LES AGENTS
 # ==========================================
+
+# Utilisation du modèle Qwen3.5:9b
 llm_local = LLM(model="ollama/qwen3.5:9b", base_url="http://localhost:11434")
 
 analyste = Agent(
@@ -106,6 +109,7 @@ trader = Agent(
 # ==========================================
 # 4. LES MISSIONS
 # ==========================================
+
 tache_analyse = Task(
     description='Utilise tes outils pour trouver le prix actuel de "BTC/USD" et les actus "Bitcoin crypto". Rédige un résumé du sentiment du marché.',
     expected_output='Rapport complet avec le prix et la tendance du marché.',
@@ -127,8 +131,9 @@ equipe = Crew(
 # ==========================================
 # 5. LE LANCEMENT
 # ==========================================
+
 print("Lancement de la simulation de Trading...")
 equipe.kickoff()
 
-# À la fin, on regarde combien d'argent on a !
+# Combien le broker nous renvoie 
 broker.afficher_statut()
