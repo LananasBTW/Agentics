@@ -57,9 +57,10 @@ class KrakenPaperTrader:
         print("-----------------------------------------\n")
 
 
-# Petit test rapide si tu lances ce fichier directement !
+# Test si on lance le fichier
+# Intialisation avec 1000 dollars
 if __name__ == "__main__":
     broker = KrakenPaperTrader(solde_initial_usd=5000)
     print(f"Prix du Bitcoin sur Kraken : {broker.obtenir_prix_actuel()} $")
-    print(broker.executer_ordre("ACHETER", 1000)) # On achète pour 1000 faux dollars
+    print(broker.executer_ordre("ACHETER", 1000))
     broker.afficher_statut()
