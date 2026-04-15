@@ -52,7 +52,7 @@ trader = Agent(
 )
 
 # ==========================================
-# 4. LA MISSION (Le marché d'aujourd'hui)
+# 4.La Marché d'aujourd'hui (La Mission)
 # ==========================================
 
 crypto_cible = "bitcoin"
