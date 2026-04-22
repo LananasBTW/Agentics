@@ -35,7 +35,7 @@ class KrakenPaperTrader:
                 return f"SUCCÈS : Vente de {quantite:.4f} BTC pour {montant_usd}$. Prix unitaire: {prix_actuel}$"
             return "ÉCHEC : Fonds en BTC insuffisants."
             
-        return "Action ignorée. Le mot doit être ACHETER ou VENDRE."
+        return "Le mot doit être ACHETER ou VENDRE."
 
     def afficher_statut(self):
         prix_btc = self.obtenir_prix_actuel()
